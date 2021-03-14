@@ -415,6 +415,15 @@ footer a:hover{
 
 
 /* media query */
+@media only screen and (max-width:1000px){
+    header nav ul{
+        padding-left: 15px;
+    }
+    header nav ul li a{
+        margin-right: 15px;
+    }
+}
+
 @media only screen and (max-width:768px){
 
     /* header */
@@ -433,6 +442,9 @@ footer a:hover{
     }
     header h2, header .buttons a span{
         color: #000 !important;
+    }
+    header h2{
+        font-size: 28px;
     }
     header nav{
         position: absolute;
