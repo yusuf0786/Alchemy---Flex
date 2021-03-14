@@ -20,7 +20,7 @@ header{
     background: none;
 }
 header:hover{
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
 header nav ul li a, header h2, header .buttons a{
@@ -61,13 +61,12 @@ header .buttons span{
 
 /* banner starts */
 .banner{
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -68px;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption{
-    position: relative;
-    bottom: 580px;
-    left: 0;
+    position: absolute;
+    top: 480px;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption button{
     background: none;
@@ -76,6 +75,7 @@ header .buttons span{
     font-size: 18px;
     padding: 10px;
     cursor: pointer;
+    margin-top: 20px;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption button:hover{
     background-color: #fff;
@@ -91,12 +91,9 @@ header .buttons span{
     color: #fff;
     padding-top: 58px;
     padding-bottom: 28px;
-    margin-top: 776px;
     text-align: center;
     line-height: 48px;
-}
-.text-section .text{
-    position: relative;
+    margin-top: -68px;
 }
 .text-section .text a{
     text-decoration: underline;
@@ -316,7 +313,7 @@ header .buttons span{
     text-decoration: none;
 }
 .another-two-section .right img{
-    width: 103%;
+    width: 100%;
 }
 
 
@@ -418,7 +415,7 @@ footer a:hover{
 
 
 /* media query */
-@media only screen and (max-width:576px){
+@media only screen and (max-width:768px){
 
     /* header */
     header{
@@ -447,15 +444,17 @@ footer a:hover{
     header nav ul{
         margin-left: 18px;
     }
+    header nav ul li a{
+        margin-right: 15px;
+    }
     header nav ul li a:hover{
         color: #fff !important;
     }
 
     /* text-section */
     .text-section{
-        padding-top: 58px;
+        padding-top: 38px;
         padding-bottom: 28px;
-        margin-top: 285px;
         line-height: 28px;
     }
 
