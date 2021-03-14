@@ -11,12 +11,12 @@
 
         $("header h2").animate({
             fontSize:"38px"
-        });
+        },0100);
     },
     function(){
         $("header h2").animate({
             fontSize:"32px"
-        });
+        },0100);
     }
     );
 
