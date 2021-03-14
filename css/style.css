@@ -297,7 +297,7 @@ header .buttons span{
     color: grey;
 }
 .another-two-section .left h2{
-    margin-top: 100px;
+    margin-top: 10%;
     margin-bottom: 28px;
     color: #000;
     font-size: 28px;
@@ -415,13 +415,23 @@ footer a:hover{
 
 
 /* media query */
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:991px){
     header nav ul{
         padding-left: 15px;
     }
     header nav ul li a{
         margin-right: 15px;
     }
+
+    .multi-section .right .items .text-content{
+        align-self: center;
+    }
+
+    .another-two-section .left h2{
+        margin-top: 6%;
+    }
+
+
 }
 
 @media only screen and (max-width:768px){
@@ -501,15 +511,11 @@ footer a:hover{
 
     /* another two-section */
     .another-two-section .left h2{
-        margin-top: 18px;
         margin-bottom: 10px;
     }
     .another-two-section .left p{
         margin-top: -10px;
         margin-bottom: 8px;
-    }
-    .another-two-section .right img{
-        margin-top: 18px;
     }
 
     /* email-section */
@@ -526,5 +532,16 @@ footer a:hover{
     footer .bottom-footer{
         text-align: center;
         line-height: 38px;
+    }
+}
+
+@media only screen and (max-width:438px){
+
+    header nav ul{
+        margin-left: 28px;
+    }
+    header nav ul li a{
+        font-size: 1rem;
+        margin-right: 8px;
     }
 }
