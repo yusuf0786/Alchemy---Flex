@@ -421,12 +421,16 @@ footer a:hover{
 
 
 /* media query */
-@media only screen and (max-width:991px){
+@media only screen and (max-width:1024px){
     header nav ul{
         padding-left: 15px;
     }
     header nav ul li a{
         margin-right: 15px;
+    }
+
+    .carousel .carousel-inner .carousel-item .carousel-caption{
+        top: 400px;
     }
 
     .multi-section .right .items .text-content{
@@ -476,6 +480,11 @@ footer a:hover{
     header nav ul li a{
         margin-right: 28px;
         color: #fff !important;
+    }
+
+    /* banner */
+    .carousel .carousel-inner .carousel-item .carousel-caption{
+        top: 200px;
     }
 
     /* text-section */
@@ -564,6 +573,17 @@ footer a:hover{
         margin: 0;
         margin-top: 28px;
         padding: 10px 13px;
+    }
+
+    .carousel .carousel-inner .carousel-item .carousel-caption{
+        top: 100px;
+    }
+    .carousel-caption hgroup h1, .carousel-caption hgroup h5 {
+        font-size: 15px;
+    }
+    .carousel .carousel-inner .carousel-item .carousel-caption button{
+        font-size: 10px;
+        font-weight: 600;
     }
 
     footer .bottom-footer .payment-methods {
