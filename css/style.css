@@ -586,3 +586,11 @@ footer a:hover{
         text-align: center;
     }
 }
+
+@media (max-width:372px) {
+
+    .two-section .container .section-text h3 {
+
+        font-size: 23px;
+    }
+}
