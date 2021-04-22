@@ -175,15 +175,18 @@ header .buttons span{
 
 /* two-section starts */
 .two-section{
-    width: 100%;
     padding: 58px 0;
     background-color: #f0f0f0;
 }
 .two-section .container .section-text{
-    text-align: center;
-    background-color: #fff;
-    padding: 38% 5%;
+    width: 100%;
     height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 18%;
 }
 .two-section .container .section-text a{
     color: navy;
@@ -405,6 +408,9 @@ footer .top-footer .social span:hover{
 footer .bottom-footer{
     color: rgb(147, 147, 243);
 }
+footer .bottom-footer .payment-methods {
+    text-align: right;
+}
 footer .bottom-footer .payment-methods img{
     margin-right: 18px;
 }
@@ -465,12 +471,10 @@ footer a:hover{
         padding-top: 18px;
     }
     header nav ul{
-        margin-left: 18px;
+        padding-left: 58px;
     }
     header nav ul li a{
-        margin-right: 15px;
-    }
-    header nav ul li a:hover{
+        margin-right: 28px;
         color: #fff !important;
     }
 
@@ -535,13 +539,34 @@ footer a:hover{
     }
 }
 
-@media only screen and (max-width:438px){
+@media only screen and (max-width:425px){
 
-    header nav ul{
-        margin-left: 28px;
+    header nav{
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        padding: 10px 0;
+    }
+    header .nav-close{
+        position: static;
+    }
+    header nav ul {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 0 15px;
     }
     header nav ul li a{
-        font-size: 1rem;
-        margin-right: 8px;
+        display: block;
+        background-color: cyan;
+        color: #000 !important;
+        border-radius: 4px;
+        margin: 0;
+        margin-top: 28px;
+        padding: 10px 13px;
+    }
+
+    footer .bottom-footer .payment-methods {
+        text-align: center;
     }
 }

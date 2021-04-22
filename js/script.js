@@ -43,3 +43,18 @@
             opacity:'1'
         },-1000);
     });
+
+    // form validation
+
+    function validation() {
+
+        var myemail = document.getElementById('email').value;
+
+        if (myemail == "") {
+            document.getElementById('email').value= 'Required';
+            return false;
+        }
+        else {
+            alert('Congratulations your email is registered');
+        }
+    }

@@ -154,7 +154,7 @@
     <section class="two-section">
       <div class="container">
         <div class="row no-gutters">
-            <div class="col-sm-6">
+            <div class="col-sm-6 bg-white">
                 <div class="section-carousel">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -184,7 +184,7 @@
             <div class="col-sm-6">
                 <div class="section-text">
                     <h3>System Complete</h3>
-                    <p>The Avant luggage collection with Interlink™ technology uses a mechanical latching mechanism for seamless coupling of matching accessories</p>
+                    <p class="text-center">The Avant luggage collection with Interlink™ technology uses a mechanical latching mechanism for seamless coupling of matching accessories</p>
                     <a href="#">AVANT MODULAR</a>
                 </div>
             </div>
@@ -302,9 +302,9 @@
     <section class="email-section">
         <abbr title="email"><span class="fa fa-envelope-o"></span></abbr>
         <h4>Sign up for first access to new products, sales and events</h4>
-        <form action="#">
-            <input type="email" placeholder="Email address">
-            <button type="button">SUBSCRIBE</button>
+        <form action="process.php">
+            <input type="email" placeholder="Email address" id="email">
+            <button type="submit" onclick="validation(); return">SUBSCRIBE</button>
         </form>
         <small>No spam, only high-quality curated content.</small>
     </section>
