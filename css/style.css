@@ -11,6 +11,7 @@
 }
 
 header{
+    width: 100%;
     position: relative;
     z-index: 1;
     display: flex;
@@ -29,7 +30,6 @@ header nav ul li a, header h2, header .buttons a{
 
 header nav ul{
     display: flex;
-    padding-left: 38px;
 }
 header nav ul li{
     list-style-type: none;
@@ -52,7 +52,6 @@ header h2{
 }
 header .buttons{
     font-size: 18px;
-    padding-right: 38px;
 }
 header .buttons span{
     margin-left: 15px;
@@ -473,9 +472,6 @@ footer a:hover{
         display: none;
         width: 100%;
         padding-top: 18px;
-    }
-    header nav ul{
-        padding-left: 58px;
     }
     header nav ul li a{
         margin-right: 28px;
